@@ -39,13 +39,13 @@ def perform_action(action):
     current_state = action
 
     if action == "accelerate":
-        pyautogui.keyUp("left")    # release brake if held
-        pyautogui.keyDown("right") # hold accelerate
+        pyautogui.keyUp("left") 
+        pyautogui.keyDown("right") 
         print("Accelerating")
 
     elif action == "brake":
-        pyautogui.keyUp("right")   # release accelerator if held
-        pyautogui.keyDown("left")  # hold brake
+        pyautogui.keyUp("right") 
+        pyautogui.keyDown("left") 
         print("Braking")
 
     elif action == "neutral":
